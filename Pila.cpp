@@ -22,7 +22,7 @@ bool Pila::Push(char dato)
         datos[tope]=dato;
         return true;
     }else{
-        std::cout<<"\nError!, La lista esta llena."<<std::endl;
+        std::cout<<"\nError!, La pila esta llena."<<std::endl;
         return false;
     }
 }
@@ -30,7 +30,7 @@ bool Pila::Push(char dato)
 char Pila::Pop()
 {
     if(Vacia()){
-        std::cout<<"\nLa lista esta vacia!"<<std::endl;
+        std::cout<<"\nLa pila esta vacia!"<<std::endl;
     } else {
         tope--;
         return datos[tope+1];
